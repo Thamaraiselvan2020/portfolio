@@ -1,10 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Resume DOM</title>
-    <script src="https://kit.fontawesome.com/8a80387655.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <script src="resume_dom.js"></script>
-</body>
-</html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.scss">
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio responsive complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Thamarai (Tom)</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <h1 class="home__title"><span>HE</span><br>LLO.</h1>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
+                    </div>
+
+                    <!-- <img src="assets/img/perfil.png" alt="" class="home__img"> -->
+                    <img src="img/MyFoto.jpg" alt="" class="home__img">
+                </div>
+            </section>
+            
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="img/MyFoto.jpg" alt="">
+                    </div>
+
+                    <div>
+                        <h2 class="about__subtitle">I'am Thamaraiselvan Balakrishnan</h2>
+                        <span class="about__profession">Senior Client Partner</span>
+                        <p class="about__text">To enhance my professional skills in a dynamic workplace, where my talents are appreciated and to reach the height of success along with organisation.</p>
+
+                        <div class="about__social">
+                            <a href="#" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                            <a href="#" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+                            <a href="#" class="about__social-icon"><i class='bx bxl-dribbble' ></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">
+                    <div class="skills__box">
+                        <h3 class="skills__subtitle">Development</h3>
+                        <span class="skills__name">Html</span>
+                        <span class="skills__name">Css</span>
+                        <span class="skills__name">Javascript</span>
+                        <span class="skills__name">Bootstrap</span>
+                        <span class="skills__name">Data Structure</span>
+                        <span class="skills__name">Scss</span>
+                        <span class="skills__name">React</span>
+                        <span class="skills__name">Node.js</span>
+                        
+                        <h3 class="skills__subtitle">Design</h3>
+                        <span class="skills__name">Adobe XD</span>
+                        <span class="skills__name">Photoshop</span>
+                    </div>
+
+                    <div class="skills__img">
+                        <img src="assets/img/skill.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== PORTFOLIO =====-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section-title">Portfolio</h2>
+
+                <div class="portfolio__container bd-grid">
+                <div class="work_experience" style="font-size: 30px; color: darkslategrey;">Work Experience</div>
+                <div class="designation" style="color: coral;width: 100%;font-size: 25px;">Senior Client Partner - AR</div>
+                <div class="employee_joining_date" style="font-size: 20px;color: coral;">2019-Present</div>
+                <div class="employer" style="width: 250px;"><img src="https://caas.athenahealth.com/sites/default/files/logo_0.png"/><img src='https://static1.squarespace.com/static/556dad00e4b074f7195938e5/t/5a293b5624a6942a95c1c1b8/1599081641701/?format=1500w'/></div>
+                <div class='employee_job_desc'style=""><br><br>
+                    <p>We are supporting for more than 300000 physicians and 80 specialities across US. 
+                        My day to day responsibility would be making a call to US payers to discuss about patient denied claims and let them to know submitted patient data and treatment protocol was followed according to the US statewise healthcare guidelines, 
+                        we are requesting them to process the payment for physicians how much they charged for each patient treatment. Also some claims there may be an issue that was holding due to the litigation issue, 
+                        until we should get a update from attorney what is going on this claim which we treated for this patient so provider have to wait for clear court judgement. 
+                        In a day atleast we are speaking more than 5 hours with US payers</p>
+                </div><br><br>
+                <div class="designation" style="color: coral;width: 100%;font-size: 25px;">Senior Data Associate - AR</div>
+                <div class="employee_joining_date" style="font-size: 20px;color: coral;">2015-2019</div>
+                <div class="employer" style="width: 250px;"><img src="https://pronto-core-cdn.prontomarketing.com/2/wp-content/uploads/sites/3397/2020/09/logo-world-source-r1.png"/></div>
+                <div class="employee_job_desc" style="font-weight: 300;"><br><br>
+                    <p>For 3 years I was worked here as senior data associate in medical billing project 
+                        and client would be athenahealth. We are dealing with preparing the claims and 
+                        sending to US payers for getting reimbursement. After reviewed claim at payer 
+                        end they will return numerous claim to us which means submitted claim was denied
+                         due to some sort of issue on this bill, so that we are again reviewing the 
+                         physician treatment data and claim form while mapping both data should be 
+                         match if there is any discrepancy we have to discuss with physicians and also 
+                         we’re getting the update about patient demographic data from patient if they have
+                          any different data and current insurance plan and policies</p>
+                </div><br><br>
+                <div class="education"style="font-size: 30px; color: darkslategrey;">Education</div>
+                <div class="college" style="width: 100%;">
+                    <div class="college__logo"style="width: 250px;"><img src="https://1.bp.blogspot.com/-DXJzcK9Bhks/WEPYRmaeZ7I/AAAAAAAAkZk/HjCwKrfO2p0Ib2tiZkmm2_1jHuEqUt3uQCLcB/s1600/v5950.png"></div>
+                    <div style="color: tomato;font-size: 20px;">Excel Engineering College</div>
+                    <div class="department">Stream -> Electronics Engineering</div>
+                    <div class="duration">Duration ->2010-2014</div>
+                    <div class="aggregate">Aggregate -> 75%</div>
+                </div><br><br><br><br>
+                    <div class="portfolio__img">
+                        <img src="https://images.pexels.com/photos/38537/woodland-road-falling-leaf-natural-38537.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="https://images.pexels.com/photos/531321/pexels-photo-531321.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="https://images.pexels.com/photos/459203/pexels-photo-459203.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="https://images.pexels.com/photos/4352247/pexels-photo-4352247.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="https://images.pexels.com/photos/1000234/pexels-photo-1000234.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">EMAIL</h3>
+                        <div class="contact__text">thamarai.vivid@gmail.com</div>
+                        <div class="contact__text">thamaraiselv.ba@accesshealthcare.com</div>
+                        <div class="contact__text">thamaraiselv.ba@athenahealth.com</div>
+
+                        <h3 class="contact__subtitle">PHONE</h3>
+                        <span class="contact__text">+91 822 008 3621</span>
+
+                        <h3 class="contact__subtitle">Chennai</h3>
+                        <span class="contact__text">India</span>
+                    </div>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Name" class="contact__input">
+                            <input type="mail" placeholder="Email" class="contact__input">
+                        </div>
+
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+
+                        <input type="submit" value="Submit" class="contact__button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <div class="footer__data">
+                    <h2 class="footer__title">THAMARAISELVAN BALAKRISHNAN</h2>
+                    <p class="footer__text">I'm Thamaraiselvan Balakrishnan and this is my personal website</p>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__title">EXPLORE</h2>
+                    <ul>
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#about" class="footer__link">About</a></li>
+                        <li><a href="#skills" class="footer__link">Skills</a></li>
+                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
+                        <li><a href="#Contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__data">
+                    <h2 class="footer__title">FOLLOW</h2>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter' ></i></a>
+                </div>
+
+
+            </div>
+        </footer>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="script.js"></script>
+    </body>
+</html
